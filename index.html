@@ -1,0 +1,59 @@
+<!--
+Yours truly,
+The fish. :S 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>An Experimentally-High Webpage</title>
+    <style>
+    	body {
+    		margin-top: 200px;
+    		background-color: black;
+    		font-family: monospace;
+    		color: white;
+    		vertical-align: center;
+    		text-align: center;
+    	}
+
+    	h1 {
+    		font-size: 2.5em;
+    	}
+
+    	h2 {
+    		font-size: 2em;
+    	}
+
+    	h3 {
+    		font-size: 1.5em;
+    	}
+
+    	a {
+    		text-decoration: none;
+    		color: blue;
+    	}
+
+    	a:hover {
+    		text-decoration: underline;
+    		font-weight: bolder;
+    	}
+    </style>
+</head>
+<body>
+    <h1>Welcome to an Experimentally-High Webpage.</h1>
+    <h2>Warning: It's pretty high...</h2>
+    <h3><a href="./redir.html">Continue</a></h3>
+    <script type="text/javascript">
+    	$("a").hover(
+		  function() {
+		    $( this ).append( $( "<span> >> </span>" ) );
+		    $( this ).prepend( $( "<span> >> </span>" ) );
+		  }, function() {
+		    $( this ).find("span").remove();
+		  }
+		);
+    </script>
+</body>
+</html>
