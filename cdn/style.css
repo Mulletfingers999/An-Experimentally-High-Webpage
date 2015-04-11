@@ -1,0 +1,114 @@
+* { margin: 0; padding: 0; }
+
+body
+{
+	font-family: monospace;
+	font-size: 10px;
+	background: black;
+	color: white !important;
+}
+
+a { color: red; text-decoration: underline; }
+
+p#submitter a { display: block; padding: 4px; display: inline-block; }
+p#submitter a:link { color: #000; text-decoration: none; background: #fff; }
+p#submitter a:hover { color: #fff; text-decoration: none; background: #0c0; }
+
+input[type=text]
+{
+	margin-top: 1px;
+	width: 196px;
+	padding: 4px 2px;
+	border: none;
+	background: #fff;
+	font-family: monospace;
+}
+
+#increments input[type=text]
+{
+	width: 40px;
+	padding: 4px 2px;
+	border: none;
+	background: #fff;
+}
+
+#increments select
+{
+	margin-top: 2px;
+	font-family: monospace;
+}
+
+#increments p
+{
+	display: block;
+	float: left;
+	width: 45px;
+}
+
+#bot2
+{
+	background: #000;
+	display: block;
+	color: #fff;
+}
+
+#bot2 a { color: #fff; text-decoration: underline; }
+
+#bot2 .pad { padding: 20px; }
+
+.column
+{
+	width: 250px;
+	float: left;
+}
+
+.column p { padding-right: 20px; }
+
+p { margin-bottom: 12px; }
+
+h1 {
+	margin-bottom: 24px; font-size: 2.5em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#calculator
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+#dpi-check { width: 1in; height: 1in; background: #0c0; }
+
+#mile
+{
+    height: 6082560px;
+    width: 50px;
+    background: url(../img/inch.gif) repeat-y 0% 0%;
+    display: block;
+}
+
+#cm
+{
+    height: 6082560px;
+    width: 36px;
+    background: url(../img/pixel.gif) repeat-y 0% 0%;
+}
+
+#eifel-tower
+{
+    height: 1238640px;
+}
+
+.r_in { position: absolute; left: 30px; width: 100px; color: red; }
+
+#pad  {
+	text-align: center;
+}

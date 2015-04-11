@@ -5,90 +5,90 @@ Small code for a hugeass webpage...
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <title>An Experimentally-High Webpage</title>
-    <style>
-    	body {
-    		margin-top: 200px;
-    		background-color: black;
-    		font-family: monospace;
-    		color: white;
-    		text-align: center;
-    	}
+  <meta charset="UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <title>An Experimentally-High Webpage</title>
+  <style>
+  body {
+    margin-top: 200px;
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    text-align: center;
+  }
 
-    	h1 {
-    		font-size: 2.5em;
-    	}
+  h1 {
+    font-size: 2.5em;
+  }
 
-    	h2 {
-    		font-size: 2em;
-    	}
+  h2 {
+    font-size: 2em;
+  }
 
-    	h3 {
-    		font-size: 1.5em;
-    	}
+  h3 {
+    font-size: 1.5em;
+  }
 
-    	a {
-    		text-decoration: none;
-            color: blue;
-    	}
+  a {
+    text-decoration: none;
+    color: blue;
+  }
 
-    	a:hover {
-    		text-decoration: underline;
-    		font-weight: bolder;
-    	}
+  a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
 
-        #milescroll {
-            padding-top: 63360in;
-            width: 100%;
-            position: relative;
-            bottom: 0px;
-        }
+  #milescroll {
+    padding-top: 63360in;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
 
-        #ruler {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 63360in;
-            width: 50px;
-            background: url(./img/inch.gif) repeat-y 0% 0%;
-            display: block;
-        }
+  #ruler {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 63360in;
+    width: 50px;
+    background: url(./img/inch.gif) repeat-y 0% 0%;
+    display: block;
+  }
 
-        span {
-            position: absolute;
-            border-top: 3px dashed white;
-            text-align: center;
-            width: 100%;
-            left: 0px;
-            font-size: 1.5em;
-        }
-    </style>
+  span {
+    position: absolute;
+    border-top: 3px dashed white;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    font-size: 1.5em;
+  }
+  </style>
 </head>
 <body>
-    <div id="milescroll"></div>
-    <div id="ruler" title="A ruler, in inches."></div>
-    <h1 id="bottom">Ready? Scroll up.</h1>
-    <hr/>
-    <h2 style="padding-bottom: 100px;">It's not that bad. I promiseish.</h2>
-    <!--Begin Markers-->
-    <span style="bottom: -63350px;">It starts here. Good luck.</span>
-    <!--End Markers-->
+  <div id="milescroll"></div>
+  <div id="ruler" title="A ruler, in very rough inches."></div>
+  <h1 id="bottom">Ready? Scroll up.</h1>
+  <hr/>
+  <h2 style="padding-bottom: 100px;">It's not that bad. I promise...ish</h2>
+  <!--Begin Markers-->
+  <span style="bottom: -6081900px;">It starts here. Good luck.</span>
+  <!--End Markers-->
 
-    <script type="text/javascript">
-    	$("a").hover(
-		  function() {
-		    $( this ).append( $( "<span> >> </span>" ) );
-		    $( this ).prepend( $( "<span> >> </span>" ) );
-		  }, function() {
-		    $( this ).find("span").remove();
-		  }
-		);
+  <script type="text/javascript">
+  $("a").hover(
+    function() {
+      $( this ).append( $( "<span> >> </span>" ) );
+      $( this ).prepend( $( "<span> >> </span>" ) );
+    }, function() {
+      $( this ).find("span").remove();
+    }
+  );
 
-        if (!window.location.hash) {
-            window.location.replace("#bottom");
-        }
-    </script>
+  if (!window.location.hash) {
+    window.location.replace("#bottom");
+  }
+  </script>
 </body>
 </html>

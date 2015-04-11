@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<title>One Mile Scroll</title>
+
+	<link rel="stylesheet" href="./cdn/style.css" type="text/css">
+
+	<script type="text/javascript" src="./cdn/jquery.js"></script>
+	<script type="text/javascript" src="./cdn/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="./cdn/jquery.easing.js"></script>
+	<script type="text/javascript" src="./cdn/common.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		var h = $(window).height();
+		$('#bot2').css('height', h);
+	});
+
+	$(window).scroll(function () { reposition_calculator(); });
+	</script>
+</head>
+<body id="page">
+	<div id="calculator" style="position: fixed; top: 0; left: 0; z-index: 1000; width: 100%;">
+		<div id="readout2" style="margin: 6px 30px 6px 30px; font-size: 10px;">
+			<div id="r_left" style="float: left; width: 20%;">0 ft </div>
+			<div id="r_right" style="float: right; width: 20%; text-align: right;">0 px </div>
+			<div style="clear: both;"><!-- this is a div --></div>
+		</div>
+	</div>
+
+
+	<div id="container" style="margin: 0; padding: 0; position: relative;">
+
+		<div style="position: relative;">
+			<div id="mile" style="float: left;"><!-- one mile inches 96 dpi --></div>
+			<div id="cm" style="float: right;"><!-- one mile cm 96 dpi --></div>
+			<div style="clear: both;"><!-- --></div>
+		</div>
+
+		<!-- the objects! -->
+		<div id="objects">
+			<div style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 9999; color: red; border-top: 1px solid red; text-align: center;">
+				<div id="hold9999"><a href="./cdn/int.html" onclick="$(&#39;#held9999&#39;).toggle(); return false;">Multiple Objects (4)</a> / 5280 ft / 1609.34 </div>
+				<div id="held9999" style="display: none;">
+					<ul style="list-style-type: none; width: 700px; margin: 0 auto; background: white;">
+						<li style="display: inline; margin-right: 9px;">One Mile</li>
+						<li style="display: inline; margin-right: 9px;">Denver - The Mile High City</li>
+						<li style="display: inline; margin-right: 9px;">My love for you</li>
+						<li style="display: inline; margin-right: 9px;">running this far sucks</li>
+					</ul>
+				</div>
+			</div>
+
+			<div style="position: absolute; top: 24px; left: 0px; width: 100%; z-index: 9998; color: red; border-top: 1px solid red; text-align: center;">
+				<p>I....can't......make....it...... / 5279 ft 11.75 inches / 1609.34 m</p>
+			</div>
+
+
+		</div>
+		<!-- end objects! -->
+
+	</div>
+
+	<div id="bot2" style="height: 616px;">
+		<div class="pad">
+			<h1 id="bottom">Ready? Start Scrolling.</h1>
+			<hr style="border-style: solid"/>
+			<br/><br/>
+			<h2>It's not too bad, I promise...ish</h2>
+
+			<!--<div class="column">
+				<p>Popular Destinations</p>
+				<p><a href="./cdn/int.html" onclick="scrollem(2304000);">Highest tightrope walk</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(4374144);">Petronas Towers</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(4857984);">Eifel Tower</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(4412160);">Sears Tower</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(4642560);">Empire State Building</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(5201280);">Longest Bungy Jump</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(5658624);">Tallest Redwood Tree</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(5681664);">Free dive record</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(5908608);">Statue of Liberty</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(6048000);">Arcadia Art Gallery</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(6072264);">Tallest man</a></p>
+				<p><a href="./cdn/int.html" onclick="scrollem(6073176);">Tallest woman</a></p>
+			</div>-->
+
+			<div style="clear: both;"><!-- --></div>
+			<script>
+				if (!window.location.hash) {
+					window.location.replace("#bottom");
+				}
+			</script>
+		</div>
+	</div>
